@@ -1,6 +1,6 @@
 # PhyloTidy-IJSEM
 
-[English Version](#english-version) | [简体中文 (默认)](#简体中文-chinese-version)
+[English Version](#english-version) | [简体中文](#简体中文-chinese-version)
 
 ---
 
@@ -16,11 +16,11 @@
 
 在 Adobe Illustrator 或 Inkscape 中手动逐一修改 SVG 文本既枯燥又耗时。**PhyloTidy-IJSEM** 利用正则表达式自动解析并重排 SVG 的底层文本标签，为你一键解决排版难题。
 
-### 📸 效果展示 (Screenshots)
+### 📸 效果展示
 
-| 修改前 (Before) | 修改后 (After) |
+| 修改前 (原始导出) | 修改后 (IJSEM 标准) |
 | :---: | :---: |
-| <img src="picture/修改前.png" width="400"> | <img src="picture/修改后.png" width="400"> |
+| ![修改前](picture/修改前.png) | ![修改后](picture/修改后.png) |
 | *所有字体均为正体，格式杂乱* | *物种名自动斜体，生成上标 T，序列号带括号* |
 
 ### ✨ 功能特点
@@ -32,13 +32,17 @@
 ### 🚀 使用方法
 
 #### 👉 Windows 用户 (开箱即用)
-1. 前往本仓库的 [Releases](#) 页面，下载最新的 `PhyloTidy-IJSEM.exe`。
-2. 找到你从建树软件导出的原始 SVG 文件。
+1. 前往本仓库的 Releases 页面，下载最新的 `PhyloTidy-IJSEM.exe`。
+2. 找到你从建树软件（如 MEGA, iTOL 等）导出的原始 SVG 文件。
 3. **按住鼠标左键，将 `.svg` 文件直接拖拽到 `PhyloTidy-IJSEM.exe` 图标上并松开。**
 4. 黑色控制台窗口会短暂弹出并显示处理进度。完成后，同一文件夹下会自动生成排版好的新文件。
 
 #### 👉 开发者 (源码运行)
-请确保已安装 Python 3.x。本脚本仅使用 Python 内置库（`re`, `os`, `sys`）。
+请确保已安装 Python 3.x。本脚本仅使用 Python 内置库。
+
 ```bash
-git clone [https://github.com/YourUsername/PhyloTidy-IJSEM.git](https://github.com/YourUsername/PhyloTidy-IJSEM.git)
+# 克隆仓库
+git clone [https://github.com/zl-dotcom/PhyloTidy-IJSEM.git](https://github.com/zl-dotcom/PhyloTidy-IJSEM.git)
+
+# 命令行运行 (支持传入多个文件)
 python format_svg.py your_tree_file.svg
