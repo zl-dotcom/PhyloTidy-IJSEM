@@ -46,7 +46,7 @@ git clone [https://github.com/zl-dotcom/PhyloTidy-IJSEM.git](https://github.com/
 
 # 命令行运行 (支持传入多个文件)
 python format_svg.py your_tree_file.svg
-
+```
 🛠️ 原理解析
 
 本工具直接读取 SVG 的底层 XML 结构，寻找标准的 16S 序列 FASTA 表头模式。
