@@ -46,3 +46,82 @@ git clone [https://github.com/zl-dotcom/PhyloTidy-IJSEM.git](https://github.com/
 
 # 命令行运行 (支持传入多个文件)
 python format_svg.py your_tree_file.svg
+
+🛠️ 原理解析
+
+本工具直接读取 SVG 的底层 XML 结构，寻找标准的 16S 序列 FASTA 表头模式。
+
+转换前: > Bacillus subtilis subsp. subtilis 168 AL009126
+
+转换后: Bacillus subtilis subsp. subtilis 168T (AL009126)
+
+⚠️ 输入文件要求
+
+序列名称尽量遵循以下结构：[属名] [种名] [菌株名] [序列号]。
+
+📄 开源协议
+
+本项目基于 MIT License 开源 - 详情请查看 LICENSE 文件。
+
+English Version
+
+返回中文 (Back to Chinese)
+
+A lightweight, drag-and-drop tool to automatically format phylogenetic tree SVG files for IJSEM publication standards.
+
+🌟 Introduction
+
+When submitting novel species descriptions to journals like the International Journal of Systematic and Evolutionary Microbiology (IJSEM), phylogenetic trees must adhere to strict formatting rules (Species names italicized, Type strains with superscript 'T', Accession numbers in parentheses). PhyloTidy-IJSEM solves this problem by using Regular Expressions to parse and reformat SVG text tags automatically in seconds.
+
+📸 Screenshots
+
+BeforeAfterRaw SVG export with standard formattingFormatted ready for IJSEM submission
+
+✨ Features
+
+Zero Configuration: Just drag and drop your SVG file(s) onto the .exe icon. No coding required.
+
+Batch Processing: Support processing multiple SVG files simultaneously.
+
+Non-destructive: Generates a new file with the _Publication_Ready.svg suffix, keeping your original file perfectly safe.
+
+Highly Accurate: Optimized specifically for standard 16S sequence headers downloaded directly from the LPSN database.
+
+🚀 How to Use
+
+👉 For Windows Users (No installation required)
+
+Go to the Releases page and download the latest PhyloTidy-IJSEM.exe.
+
+Locate the phylogenetic tree SVG file exported from your software.
+
+Drag and drop the .svg file directly onto the PhyloTidy-IJSEM.exe icon.
+
+A formatted file will appear in the same folder.
+
+👉 For Developers (Run from source)
+
+Ensure you have Python 3.x installed. No external libraries required.
+
+Bash
+
+
+
+# Clone the repository
+
+git clone [https://github.com/zl-dotcom/PhyloTidy-IJSEM.git](https://github.com/zl-dotcom/PhyloTidy-IJSEM.git)# Run the script
+
+python format_svg.py your_tree_file.svg
+
+🛠️ How it Works
+
+Input text in SVG: > Bacillus subtilis subsp. subtilis 168 AL009126
+
+Output visually rendered as: Bacillus subtilis subsp. subtilis 168T (AL009126)
+
+⚠️ Requirements & License
+
+Your tree tip labels should generally follow: [Genus] [species] [strain name] [Accession Number].
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
