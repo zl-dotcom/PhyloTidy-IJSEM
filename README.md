@@ -64,7 +64,6 @@ python format_svg.py your_tree_file.svg
 本项目基于 MIT License 开源 - 详情请查看 LICENSE 文件。
 
 English Version
-
 返回中文 (Back to Chinese)
 
 A lightweight, drag-and-drop tool to automatically format phylogenetic tree SVG files for IJSEM publication standards.
