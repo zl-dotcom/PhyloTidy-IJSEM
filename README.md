@@ -37,10 +37,10 @@
 请确保已安装 Python 3.x。本脚本仅使用 Python 内置库，无需安装其他依赖。
 ```bash
 # 克隆仓库
-git clone [https://github.com/YourUsername/PhyloTidy-IJSEM.git](https://github.com/YourUsername/PhyloTidy-IJSEM.git)
+git clone [https://github.com/zl-dotcom/PhyloTidy-IJSEM.git](https://github.com/zl-dotcom/PhyloTidy-IJSEM.git)
 
 # 命令行运行 (支持传入多个文件)
-python format_svg.py your_tree_file.svg
+python PhyloTidy-IJSEM.py your_tree_file.svg
 ```
 🛠️ 原理解析
 
